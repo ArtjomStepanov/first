@@ -16,17 +16,23 @@
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+    font-family: Arodora;
+    src: url(../fonts/ArodoraPro-Light.woff) format(woff);
+    font-weight: 300;
+    font-style: normal;
+}
 body {
     margin: 0;
 }
-.section {
+.wrapper {
     background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);  
 }
-.wrapper {
+.section_header {
     max-width: 1202px;
     margin: 0 auto;
     background-image: url(../image/Gleb.png);
-    background-size: contain;
+    background-size: 60% 70%;
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -38,11 +44,12 @@ body {
     padding-top: 26px;
 }
 .logo_link {
-    margin-right: 145px;  
+    margin-right: 219px;  
 }
 .link {
     text-decoration: none;
     font-size: 18px;
+    font-family: Arodora;
     color: #E4E4E4;
     margin-right: 145px;
 }
@@ -76,9 +83,11 @@ body {
     margin-bottom: 27px;
     font-size: 18px;
     color: #E4E4E4;
+    font-family: Arodora;
 }
 .title_button {
     padding: 13px 37px;
+    margin-bottom: 142px;
     text-transform: uppercase;
     width: 200px;
     height: 47px;
