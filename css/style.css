@@ -32,9 +32,9 @@ body {
     max-width: 1202px;
     margin: 0 auto;
     background-image: url(../image/Gleb.png);
-    background-size: 60% 70%;
+    background-size: 60% 86%;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right bottom;
 }
     
 .container {
@@ -62,7 +62,7 @@ body {
 .title {
     max-width: 447px;
     padding-top: 194px;
-    padding-bottom: 140px
+    padding-bottom: 140px;
 }
 .title_h3 {
     margin-bottom: 0px;
@@ -87,7 +87,6 @@ body {
 }
 .title_button {
     padding: 13px 37px;
-    margin-bottom: 142px;
     text-transform: uppercase;
     width: 200px;
     height: 47px;
@@ -101,12 +100,11 @@ body {
     align-items: center;
 }
 .section_second {
-    margin: 0 auto;
     background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
 }
 .nav_second {
     max-width: 1202px;
-    margin: -148px auto;
+    margin: auto;
     padding-top: 113px;
     list-style: none;
     display: flex;
@@ -141,4 +139,10 @@ body {
     font-family: 'NextBold';
     font-size: 48px;
     color: #00C4F0;
+}
+.me {
+    background-image: url(../image/Ellips.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-height: 1202px;
 }
