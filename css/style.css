@@ -43,7 +43,7 @@ body {
     height: 48px;
     padding-top: 26px;
 }
-.logo_link {
+.logo__header {
     margin-right: 219px;  
 }
 .link {
@@ -101,31 +101,31 @@ body {
 }
 .section_second {
     background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    padding: 10% 0;
 }
 .nav_second {
-    max-width: 1202px;
-    margin: auto;
-    padding-top: 113px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    max-width: 1202px;
+    padding-bottom: 10%;
 }
 .nav_item {
     width: 270px;
     height: 270px;
     margin-bottom: 30px;
-    margin-right: 40px;
+    margin-right: 30px;
     background: #2A2A2A;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
     border-radius: 29px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    padding-bottom: 50px;
 }
 .last {
     margin-right: 0;
@@ -141,8 +141,129 @@ body {
     color: #00C4F0;
 }
 .me {
+    margin: auto;
     background-image: url(../image/Ellips.png);
     background-repeat: no-repeat;
     background-size: contain;
-    max-height: 1202px;
+    max-width: 1202px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.me__block {
+    width: 345px;
+    font-size: 20px;
+    background-color: #2C2C2C;
+    padding: 63px;
+    border-radius: 14px;
+}
+.me__title {
+    font-family: 'NextReg';
+    font-size: 48px;
+    color:#E4E4E4;
+    position: absolute;
+    top: -8%;
+    ;
+}
+.me__text {
+    font-family: 'Arodora';
+    color: #FFFFFF;
+}
+.me__pic {
+    padding: 27px;
+    border-radius: 14px;
+    background: #2C2C2C;
+}
+.me__pic.first {
+    position: absolute;
+    top: -6%;
+    left: 6%;
+}
+.me__pic.second {
+    position: absolute;
+    bottom: -3%;
+    left: 8%;
+}
+.me__pic.third {
+    position: absolute;
+    right: 3%;
+    top: 19%;
+}
+/* portfolio */
+.section__portfolio {
+    padding: 5% 0 8% 0;
+}
+.portfolio__conteiner {
+    margin: 0 auto;
+    max-width: 1202px;
+}
+.portfolio__title {
+    font-family: 'NextReg';
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.portfolio__work {
+    display: flex;
+    padding: 50px;
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    box-shadow: 0px 4px 15px rgba(27, 27, 27, 0.28);
+    border-radius: 29px;
+}
+.portfolio__img {
+    margin-right: 80px;
+}
+.portfolio__content {
+    text-align: center;
+    font-family: 'Arodora';
+}
+.portfolio__subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.portfolio__text {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.second__button {
+    font-size: 18px;
+    color: #E2A100;
+    border: none;
+    background: none;
+}
+.second__button:after {
+    content: url(../image/arrow.png);
+    width: 13px;
+    height: 8px;
+    margin-left: 7px;
+}
+/*footer*/
+.footer {
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    padding: 3% 0;
+}
+.footer__container {
+    max-width: 1202px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__link {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arodora;
+    color: #E4E4E4;
+    display: block;
+    margin-bottom: 18px;
+}
+.nav a:last-child {
+margin-bottom: 0;
 }
