@@ -1,0 +1,91 @@
+.section_second {
+    background: var(--colorBg);
+    padding: 10% 0;
+}
+.nav_second {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1202px;
+    padding-bottom: 10%;
+}
+.nav_item {
+    width: 270px;
+    height: 270px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    background: #2A2A2A;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+    border-radius: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.last {
+    margin-right: 0;
+}
+.nav_item h2 {
+    font-family: 'Arodora';
+    font-size: 24px;
+    color: #E4E4E4;
+}
+.nav_item p {
+    font-family: 'NextBold';
+    font-size: 48px;
+    color: #00C4F0;
+}
+.me {
+    margin: auto;
+    background-image: url(../image/Ellips.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 1202px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.me__block {
+    width: 345px;
+    font-size: 20px;
+    background-color: #2C2C2C;
+    padding: 63px;
+    border-radius: 14px;
+}
+.me__title {
+    font-family: 'NextReg';
+    font-size: 48px;
+    color:#E4E4E4;
+    position: absolute;
+    top: -8%;
+    ;
+}
+.me__text {
+    font-family: 'Arodora';
+    color: #FFFFFF;
+}
+.me__pic {
+    padding: 27px;
+    border-radius: 14px;
+    background: #2C2C2C;
+}
+.me__pic.first {
+    position: absolute;
+    top: -6%;
+    left: 6%;
+}
+.me__pic.second {
+    position: absolute;
+    bottom: -3%;
+    left: 8%;
+}
+.me__pic.third {
+    position: absolute;
+    right: 3%;
+    top: 19%;
+}

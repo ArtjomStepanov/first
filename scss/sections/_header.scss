@@ -1,0 +1,71 @@
+.section_header {
+    max-width: 1202px;
+    margin: 0 auto;
+    background-image: url(../image/Gleb.png);
+    background-size: 60% 86%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+    
+.container {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding-top: 26px;
+}
+.logo__header {
+    margin-right: 219px;  
+}
+.link {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arodora;
+    color: #E4E4E4;
+    margin-right: 145px;
+}
+.link:hover {
+    border-bottom: 1px solid yellow;
+  }
+.header_nav a:last-child {
+    margin-right: 0;
+}
+.title {
+    max-width: 447px;
+    padding-top: 194px;
+    padding-bottom: 140px;
+}
+.title_h3 {
+    margin-bottom: 0px;
+    font-size: 48px;
+    font-family: 'NextSemibold';
+    color: #E4E4E4;
+    text-transform: uppercase;
+}
+.title_h5 {
+    margin-top: 0px;
+    margin-bottom: 27px;
+    font-family: 'NextBold';
+    font-size: 72px;
+    color: #E4E4E4;
+    text-transform: uppercase;
+}
+.title_p {
+    margin-bottom: 27px;
+    font-size: 18px;
+    color: #E4E4E4;
+    font-family: Arodora;
+}
+.title_button {
+    padding: 13px 37px;
+    text-transform: uppercase;
+    width: 200px;
+    height: 47px;
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
+    box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+    border-radius: 6px;
+    font-family: 'NextBold';
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,33 @@
+:root {
+    --colorBg : linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+}
+@font-face {
+    font-family: NextReg;
+    src: url(../fonts/NEXT-ART_Regular.woff) format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: NextSemibold;
+    src: url(../fonts/NEXT-ART_SemiBold.woff) format(woff);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: NextBold;
+    src: url(../fonts/NEXT-ART_Bold.woff) format(woff);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Arodora;
+    src: url(../fonts/ArodoraPro-Light.woff) format(woff);
+    font-weight: 300;
+    font-style: normal;
+}
+body {
+    margin: 0;
+}
+.wrapper {
+    background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);  
+}
