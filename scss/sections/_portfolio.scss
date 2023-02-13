@@ -17,7 +17,7 @@
 .portfolio__work {
     display: flex;
     padding: 50px;
-    background: var(--colorBg);
+    background: $colorBg;
     box-shadow: 0px 4px 15px rgba(27, 27, 27, 0.28);
     border-radius: 29px;
 }
@@ -53,7 +53,7 @@
 }
 /*footer*/
 .footer {
-    background: var(--colorBg);
+    background: $colorBg;;
     padding: 3% 0;
 }
 .footer__container {

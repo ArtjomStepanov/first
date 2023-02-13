@@ -12,22 +12,33 @@
     align-items: center;
     height: 48px;
     padding-top: 26px;
-}
-.logo__header {
-    margin-right: 219px;  
-}
-.link {
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Arodora;
-    color: #E4E4E4;
-    margin-right: 145px;
-}
-.link:hover {
-    border-bottom: 1px solid yellow;
-  }
-.header_nav a:last-child {
-    margin-right: 0;
+    .logo__header {
+        margin-right: 219px;  
+    }
+    .link {
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arodora;
+        color: #E4E4E4;
+        margin-right: 145px;
+        &:hover {
+            border-bottom: 1px solid yellow;
+        }
+    }
+    .link__button {
+        padding: 10px 20px;
+        background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
+        box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+        color:#000;
+        border-radius: 25px;
+        font-weight: 700;
+        transition: .5s;
+        &:hover {
+            background: #fff;
+            color: #000;
+            transform: rotate(10deg) scale(1,2);
+        }
+    }
 }
 .title {
     max-width: 447px;
@@ -58,6 +69,7 @@
 .title_button {
     padding: 13px 37px;
     text-transform: uppercase;
+    transition: .5s;
     width: 200px;
     height: 47px;
     background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
@@ -68,4 +80,7 @@
     line-height: 20px;
     display: flex;
     align-items: center;
+    &:hover {
+        background: #fff;
+    }
 }

@@ -2,6 +2,10 @@
   --colorBg: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: NextReg;
   src: url(../fonts/NEXT-ART_Regular.woff) format(woff);
@@ -30,6 +34,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
 }
@@ -53,25 +61,35 @@ body {
   height: 48px;
   padding-top: 26px;
 }
-
-.logo__header {
+.container .logo__header {
   margin-right: 219px;
 }
-
-.link {
+.container .link {
   text-decoration: none;
   font-size: 18px;
   font-family: Arodora;
   color: #E4E4E4;
   margin-right: 145px;
 }
-
-.link:hover {
+.container .link:hover {
   border-bottom: 1px solid yellow;
 }
-
-.header_nav a:last-child {
-  margin-right: 0;
+.container .link__button {
+  padding: 10px 20px;
+  background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
+  -webkit-box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+          box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+  color: #000;
+  border-radius: 25px;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.container .link__button:hover {
+  background: #fff;
+  color: #000;
+  -webkit-transform: rotate(10deg) scale(1, 2);
+          transform: rotate(10deg) scale(1, 2);
 }
 
 .title {
@@ -107,6 +125,8 @@ body {
 .title_button {
   padding: 13px 37px;
   text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   width: 200px;
   height: 47px;
   background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
@@ -123,9 +143,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.title_button:hover {
+  background: #fff;
+}
 
 .section_second {
-  background: var(--colorBg);
+  background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
   padding: 10% 0;
 }
 
@@ -181,10 +204,8 @@ body {
   color: #E4E4E4;
 }
 
-.nav_item p {
-  font-family: "NextBold";
-  font-size: 48px;
-  color: #00C4F0;
+.skills__img {
+  margin-top: 20%;
 }
 
 .me {
@@ -218,7 +239,7 @@ body {
   font-size: 48px;
   color: #E4E4E4;
   position: absolute;
-  top: -8%;
+  top: -6%;
 }
 
 .me__text {
@@ -234,7 +255,7 @@ body {
 
 .me__pic.first {
   position: absolute;
-  top: -6%;
+  top: -4%;
   left: 6%;
 }
 
@@ -274,7 +295,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 50px;
-  background: var(--colorBg);
+  background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
   -webkit-box-shadow: 0px 4px 15px rgba(27, 27, 27, 0.28);
           box-shadow: 0px 4px 15px rgba(27, 27, 27, 0.28);
   border-radius: 29px;
@@ -318,7 +339,7 @@ body {
 
 /*footer*/
 .footer {
-  background: var(--colorBg);
+  background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
   padding: 3% 0;
 }
 

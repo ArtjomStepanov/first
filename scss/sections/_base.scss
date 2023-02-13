@@ -1,6 +1,9 @@
 :root {
     --colorBg : linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
 }
+html {
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: NextReg;
     src: url(../fonts/NEXT-ART_Regular.woff) format(woff);
@@ -27,6 +30,9 @@
 }
 body {
     margin: 0;
+}
+a {
+    text-decoration: none;
 }
 .wrapper {
     background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);  
