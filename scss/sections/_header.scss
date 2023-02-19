@@ -1,19 +1,29 @@
+
 .section_header {
-    max-width: 1202px;
+    width: 1202px;
+    max-width: 100%;
     margin: 0 auto;
-    background-image: url(../image/Gleb.png);
-    background-size: 60% 86%;
-    background-repeat: no-repeat;
-    background-position: right bottom;
 }
     
 .container {
     display: flex;
     align-items: center;
-    height: 48px;
-    padding-top: 26px;
+    padding: 40px 0;
+    @include mobile {
+        flex-direction: column;
+        padding: 20px 0;
+    }
     .logo__header {
         margin-right: 219px;  
+        @include mobile {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .header_nav {
+        @include mobile {
+            margin-bottom: 20px;
+        }
     }
     .link {
         text-decoration: none;
@@ -23,6 +33,10 @@
         margin-right: 145px;
         &:hover {
             border-bottom: 1px solid yellow;
+        }
+        @include mobile {
+            margin-right: 0;
+            margin-bottom: 20px;
         }
     }
     .link__button {
@@ -40,10 +54,19 @@
         }
     }
 }
+.container__hero {
+    display: flex;
+    align-items: center;
+    @include mobile {
+        flex-direction: column;
+    }
+}
 .title {
     max-width: 447px;
-    padding-top: 194px;
-    padding-bottom: 140px;
+    padding-top: 110px;
+    @include mobile {
+        text-align: center;
+    }
 }
 .title_h3 {
     margin-bottom: 0px;
@@ -51,6 +74,12 @@
     font-family: 'NextSemibold';
     color: #E4E4E4;
     text-transform: uppercase;
+    @include tablets {
+        font-size: 30px;
+    }
+    @include mobile {
+        font-size: 18px;
+    }
 }
 .title_h5 {
     margin-top: 0px;
@@ -59,28 +88,56 @@
     font-size: 72px;
     color: #E4E4E4;
     text-transform: uppercase;
+    @include tablets {
+        font-size: 52px;
+    }
+    @include mobile {
+        font-size: 36px;
+    }
 }
 .title_p {
     margin-bottom: 27px;
     font-size: 18px;
     color: #E4E4E4;
     font-family: Arodora;
+    @include tablets {
+        font-size: 18px;
+    }
+    @include mobile {
+        font-size: 16px;
+    }
 }
-.title_button {
+.title__button {
     padding: 13px 37px;
     text-transform: uppercase;
+    color: #000000;
     transition: .5s;
-    width: 200px;
-    height: 47px;
+    max-width: 136px;
+    max-height: 47px;
     background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
     box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
     border-radius: 6px;
     font-family: 'NextBold';
-    font-size: 18px;
+    font-size: 20px;
     line-height: 20px;
-    display: flex;
     align-items: center;
+    justify-content: center;
     &:hover {
         background: #fff;
+    }
+}
+.hero__right {
+    @include mobile {
+        display: flex;
+        align-items: end;
+    }
+}
+.hero__pic {
+    width: 750px;
+    @include tablets {
+        width: 350px;
+    }
+    @include mobile {
+        width: 250px;
     }
 }

@@ -1,8 +1,16 @@
-//var
+// var
 $colorBg: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
-//layout
-@import './sections/base';
-//sections
-@import './sections/header.scss';
-@import './sections/about';
-@import './sections/portfolio';
+
+// adaptive
+$mobile: 480px;
+$tablets: 768px;
+$desktop: 1200px;
+
+// layout
+@import './layout/_base.scss';
+@import './layout/_mixins.scss';
+
+// sections
+@import './sections/_header.scss';
+@import './sections/_about.scss';
+@import './sections/_portfolio.scss';

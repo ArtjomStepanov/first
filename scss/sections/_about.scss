@@ -3,13 +3,14 @@
     padding: 10% 0;
 }
 .nav_second {
+    width: 1202px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: auto;
-    max-width: 1202px;
+    max-width: 100%;
     padding-bottom: 10%;
 }
 .nav_item {
@@ -22,46 +23,57 @@
     border-radius: 29px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    &:nth-child(4) {
+        margin-right: 0;
+    }
+    @include mobile {
+        margin-right: 0;
+    }
 }
-.last {
-    margin-right: 0;
-}
-.nav_item h2 {
+.skills__img {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    }
+.skils__title {
     font-family: 'Arodora';
     font-size: 24px;
     color: #E4E4E4;
 }
-.skills__img {
-    margin-top: 20%;
-}
 .me {
+    width: 1202px;
+    height: 950px;
     margin: auto;
     background-image: url(../image/Ellips.png);
     background-repeat: no-repeat;
     background-size: contain;
-    max-width: 1202px;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 .me__block {
-    width: 345px;
+    width: 456px;
     font-size: 20px;
     background-color: #2C2C2C;
     padding: 63px;
     border-radius: 14px;
+    position: absolute;
+    right: 26%;
+    top: 8%;
 }
 .me__title {
     font-family: 'NextReg';
     font-size: 48px;
     color:#E4E4E4;
     position: absolute;
-    top: -8%;
-    ;
+    top: -9%;
 }
 .me__text {
     font-family: 'Arodora';
@@ -74,16 +86,15 @@
 }
 .me__pic.first {
     position: absolute;
-    top: -4%;
-    left: 6%;
+    top: 3%;
+    left: 11%;
 }
 .me__pic.second {
     position: absolute;
-    bottom: -3%;
-    left: 8%;
+    bottom: 6%;
+    left: 14%;
 }
 .me__pic.third {
     position: absolute;
-    right: 3%;
-    top: 19%;
+    right: 0;
 }
