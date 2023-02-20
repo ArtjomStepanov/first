@@ -435,6 +435,7 @@ a {
 }
 @media screen and (max-width: 480px) {
   .me {
+    height: 860px;
     position: initial;
     background-image: none;
   }
