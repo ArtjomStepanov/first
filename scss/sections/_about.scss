@@ -1,6 +1,6 @@
 .section_second {
     background: $colorBg;
-    padding: 10% 0;
+    padding: 8% 0;
 }
 .nav_second {
     width: 1202px;
@@ -12,6 +12,15 @@
     margin: auto;
     max-width: 100%;
     padding-bottom: 10%;
+    @include mobile {
+        display:grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 20px;
+        align-items: center;
+        justify-items: center;
+        padding-bottom: 0;
+    }
 }
 .nav_item {
     width: 270px;
@@ -30,8 +39,16 @@
         margin-right: 0;
     }
     @include mobile {
-        margin-right: 0;
+        width: 85px;
+        height: 85px;
+        margin: 0;  
     }
+}
+.child {
+    @include mobile {
+        grid-column: 1/4;
+        justify-self: center;
+}
 }
 .skills__img {
     height: 100px;
@@ -39,11 +56,17 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
+    @include mobile {
+        display: none;
+    }
     }
 .skils__title {
     font-family: 'Arodora';
     font-size: 24px;
     color: #E4E4E4;
+    @include mobile {
+        font-size: 16px;
+    }
 }
 .me {
     width: 1202px;
@@ -57,9 +80,14 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    @include mobile {
+        position: initial;
+        background-image:none;
+    }
 }
 .me__block {
     width: 456px;
+    max-width: 100%;
     font-size: 20px;
     background-color: #2C2C2C;
     padding: 63px;
@@ -67,6 +95,10 @@
     position: absolute;
     right: 26%;
     top: 8%;
+    @include mobile {
+        position: initial;
+        padding: 33px;
+    }
 }
 .me__title {
     font-family: 'NextReg';
@@ -74,6 +106,10 @@
     color:#E4E4E4;
     position: absolute;
     top: -9%;
+    @include mobile {
+        position: initial;
+        font-size: 30px;
+    }
 }
 .me__text {
     font-family: 'Arodora';
@@ -83,6 +119,9 @@
     padding: 27px;
     border-radius: 14px;
     background: #2C2C2C;
+    @include mobile {
+        display: none;
+    }
 }
 .me__pic.first {
     position: absolute;

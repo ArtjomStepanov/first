@@ -1,5 +1,8 @@
 .section__portfolio {
     padding: 5% 0 8% 0;
+    @include mobile {
+        padding: 0 0 10% 0;
+    }
 }
 .portfolio__conteiner {
     margin: 0 auto;
@@ -14,6 +17,11 @@
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 50px;
+    @include mobile {
+        font-size: 30px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 }
 .portfolio__work {
     display: flex;
@@ -23,7 +31,7 @@
     border-radius: 29px;
     @include mobile {
         flex-direction: column;
-        padding: 20px 0;
+        padding: 20px;
         align-items: center;
     }
 }
@@ -41,6 +49,7 @@
 .portfolio__content {
     text-align: center;
     font-family: 'Arodora';
+    padding: 20px 0;
 }
 .portfolio__subtitle {
     font-size: 24px;
@@ -69,6 +78,9 @@
 .footer {
     background: $colorBg;;
     padding: 3% 0;
+    @include mobile {
+        padding: 0;  
+}
 }
 .footer__container {
     width: 1202px;
@@ -77,6 +89,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include mobile {
+        flex-direction: column;
+        padding: 20px 0;
+        align-items: center;
+    }
 }
 .footer__link {
     text-decoration: none;
@@ -88,6 +105,12 @@
 }
 .nav a:last-child {
 margin-bottom: 0;
+@include mobile {
+    margin-bottom: 18px;
+}
+}
+.footer__contacts {
+    margin-bottom: 3%;
 }
 .soc__list {
     display: flex;
