@@ -175,6 +175,9 @@ a {
   }
 }
 
+.title {
+  padding: 20px;
+}
 @media screen and (max-width: 480px) {
   .title {
     text-align: center;
@@ -272,6 +275,9 @@ a {
   }
 }
 
+.hero__right {
+  margin: 5%;
+}
 @media screen and (max-width: 480px) {
   .hero__right {
     display: -webkit-box;
@@ -284,7 +290,7 @@ a {
 }
 
 .hero__pic {
-  width: 790px;
+  width: 500px;
 }
 @media screen and (max-width: 769px) {
   .hero__pic {
@@ -299,7 +305,7 @@ a {
 
 .section_second {
   background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
-  padding: 8% 0;
+  padding: 5% 0;
 }
 @media screen and (max-width: 769px) {
   .section_second {

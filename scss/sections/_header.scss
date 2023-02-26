@@ -79,6 +79,7 @@
     }
 }
 .title {
+    padding: 20px;
     @include mobile {
         text-align: center;
         padding: 0 20px;
@@ -149,13 +150,14 @@
     }
 }
 .hero__right {
+    margin: 5%;
     @include mobile {
         display: flex;
         align-items: end;
     }
 }
 .hero__pic {
-    width: 790px;
+    width: 500px;
     @include tablets {
         width: 350px;
     }
