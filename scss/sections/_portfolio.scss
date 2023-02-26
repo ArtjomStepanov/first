@@ -34,9 +34,17 @@
         padding: 20px;
         align-items: center;
     }
+    @include tablets {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
 }
 .portfolio__img {
     margin-right: 80px;
+    @include tablets {
+        margin-right: 0;
+    }
     @include mobile {
         margin-right: 0;
     }
@@ -103,14 +111,10 @@
     display: block;
     margin-bottom: 18px;
 }
-.nav a:last-child {
-margin-bottom: 0;
-@include mobile {
-    margin-bottom: 18px;
-}
-}
 .footer__contacts {
-    margin-bottom: 3%;
+    @include mobile {
+        margin-bottom: 3%;
+    }
 }
 .soc__list {
     display: flex;

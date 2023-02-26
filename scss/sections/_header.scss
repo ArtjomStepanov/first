@@ -9,12 +9,18 @@
     display: flex;
     align-items: center;
     padding: 40px 0;
+    @include tablets {
+        justify-content: center;
+    }
     @include mobile {
         flex-direction: column;
-        padding: 20px 0;
+        padding: 20px 0 0;
     }
     .logo__header {
         margin-right: 219px;  
+        @include tablets {
+            margin-right: 20px;
+        }
         @include mobile {
             margin-right: 0;
             margin-bottom: 20px;
@@ -25,6 +31,9 @@
             margin-bottom: 20px;
         }
     }
+    .nav__list {
+        display: flex;
+    }
     .link {
         text-decoration: none;
         font-size: 18px;
@@ -33,6 +42,9 @@
         margin-right: 145px;
         &:hover {
             border-bottom: 1px solid yellow;
+        }
+        @include tablets {
+            margin-right: 20px;
         }
         @include mobile {
             margin-right: 25px;
@@ -58,8 +70,12 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    @include tablets {
+        padding: 0 20px 20px;
+    }
     @include mobile {
         flex-direction: column;
+        padding: 0 20px;
     }
 }
 .title {
@@ -122,6 +138,10 @@
     justify-content: center;
     &:hover {
         background: #fff;
+    }
+    @include tablets {
+        padding: 10px 26px;
+        font-size: 16px;
     }
     @include mobile {
         padding: 8px 20px;
