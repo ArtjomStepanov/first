@@ -32,11 +32,17 @@
         font-weight: 700;
         text-shadow: 1px 0 #537387;
         letter-spacing: 1px;
+        @include mobile {
+            font-size: 14px;
+        }
     }
     span {
         color:#00C1EC;
         font-family: Arodora;
         text-transform: uppercase;
+        @include mobile {
+            font-size: 14px;
+        }
     }
     }
     .header_nav {
